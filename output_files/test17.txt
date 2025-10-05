@@ -1,0 +1,33 @@
+0, 50 , CPU burst
+50, 1, switch to kernel mode
+51, 20, context saved
+71, 1, find vector 7 in memory position 14
+72, 1, obtain ISR address 0X00BD
+73, 40 call device driver 7
+113, 1 IRET
+114, 0, scheduled END I/O 7 at t= 266
+114, 152, wait for device 7 completion
+266, 1, end of I/O 7: interrupt
+267, 1, switch to kernel mode
+268, 20, context saved
+288, 1, find vector 7 in memory position 14
+289, 1, obtain ISR address 0X00BD
+290, 40 call device driver 7
+330, 1 IRET
+331, 100 , CPU burst
+431, 1, switch to kernel mode
+432, 20, context saved
+452, 1, find vector 12 in memory position 24
+453, 1, obtain ISR address 0X03B9
+454, 40 call device driver 12
+494, 1 IRET
+495, 0, scheduled END I/O 12 at t= 640
+495, 145, wait for device 12 completion
+640, 1, end of I/O 12: interrupt
+641, 1, switch to kernel mode
+642, 20, context saved
+662, 1, find vector 12 in memory position 24
+663, 1, obtain ISR address 0X03B9
+664, 40 call device driver 12
+704, 1 IRET
+705, 20 , CPU burst

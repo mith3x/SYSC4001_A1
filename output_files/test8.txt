@@ -1,0 +1,46 @@
+0, 40 , CPU burst
+40, 1, switch to kernel mode
+41, 30, context saved
+71, 1, find vector 3 in memory position 6
+72, 1, obtain ISR address 0X042B
+73, 200 call device driver 3
+273, 1 IRET
+274, 0, scheduled END I/O 3 at t= 574
+274, 300, wait for device 3 completion
+574, 1, end of I/O 3: interrupt
+575, 1, switch to kernel mode
+576, 30, context saved
+606, 1, find vector 3 in memory position 6
+607, 1, obtain ISR address 0X042B
+608, 200 call device driver 3
+808, 1 IRET
+809, 1, switch to kernel mode
+810, 30, context saved
+840, 1, find vector 6 in memory position 12
+841, 1, obtain ISR address 0X0639
+842, 200 call device driver 6
+1042, 1 IRET
+1043, 0, scheduled END I/O 6 at t= 1308
+1043, 265, wait for device 6 completion
+1308, 1, end of I/O 6: interrupt
+1309, 1, switch to kernel mode
+1310, 30, context saved
+1340, 1, find vector 6 in memory position 12
+1341, 1, obtain ISR address 0X0639
+1342, 200 call device driver 6
+1542, 1 IRET
+1543, 1, switch to kernel mode
+1544, 30, context saved
+1574, 1, find vector 9 in memory position 18
+1575, 1, obtain ISR address 0X036C
+1576, 200 call device driver 9
+1776, 1 IRET
+1777, 0, scheduled END I/O 9 at t= 1933
+1777, 156, wait for device 9 completion
+1933, 1, end of I/O 9: interrupt
+1934, 1, switch to kernel mode
+1935, 30, context saved
+1965, 1, find vector 9 in memory position 18
+1966, 1, obtain ISR address 0X036C
+1967, 200 call device driver 9
+2167, 1 IRET
